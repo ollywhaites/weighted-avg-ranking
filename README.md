@@ -1,2 +1,10 @@
-# weighted-avg-ranking
-Weighted average ranking for football player's statistics
+# Ranking Players using Weighted Averages
+
+## Weighted Averages
+
+## Profiling Players
+
+## Resulting Ranking
+
+## Final Remarks
+
