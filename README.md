@@ -18,9 +18,13 @@ This report explains the details of this method and applies it to centre backs i
 
 ## Weighted Averages
 
+Consider a dataset of size $N$. Each datapoint is scored in $n$ different catagories where the value of the score is denoted $x^{(j)}_i$ for the $i$th score in the $j$th datapoint. Although scoring each datapoint in separate catagories is good, it would be useful to combine all these scores into one score, making all the data points easier to compare. One of the simplest ways of doing this is just by taking the sum of all the scores, such that \begin{equation}
+X_j = \sum_{i = 1}^{n}x_i^{(j)}
+\end{equation}
+
 ## Profiling Players
 
-![FB Profile](images/FB_profile.png)
+![FB Profile](images/FB_Profile.png)
 
 ## Resulting Ranking
 
