@@ -18,9 +18,9 @@ This report explains the details of this method and applies it to centre backs i
 
 ## Weighted Averages
 
-Consider a dataset of size $N$. Each datapoint is scored in $n$ different catagories where the value of the score is denoted $x^{(j)}_i$ for the $i$th score in the $j$th datapoint. Although scoring each datapoint in separate catagories is good, it would be useful to combine all these scores into one score, making all the data points easier to compare. One of the simplest ways of doing this is just by taking the sum of all the scores, such that \begin{equation}
-X_j = \sum_{i = 1}^{n}x_i^{(j)}
-\end{equation}
+Consider a dataset of size $N$. Each datapoint is scored in $n$ different catagories where the value of the score is denoted $x^{(j)}_i$ for the $i$ th score in the $j$ th datapoint. Although scoring each datapoint in separate catagories is good, it would be useful to combine all these scores into one score, making all the data points easier to compare. One of the simplest ways of doing this is just by taking the sum of all the scores, such that $$\begin{equation}X_j = \sum^{n}_i x_i^{(j)}\end{equation}$$ This reduces all the scores to one number, however there is a few slight issues. Firstly, if these scores aren't in the same range (e.g $x^{(j)}_i \in [0,100]$ but $x^{(j)}_m \in [0,5]$ for $i \neq m$) then there may be some bias towards scores with larger ranges. Also, all scores are treated identically, which may not be desirable.
+
+There are two ways the bias of unequal reanges can be solved. Either the scores can be normalised, or they can be ranked. Both methods involve mapping all the scores ranges to $[0,1]$ or $[a,b]f:\rightarrow[0,1]$ however, the mapping $f$ can be constructed in two different ways. First, the scores can be normalised, such that $$\bar{x}_i^{(j)} = f(x^{(j)}_i) = \frac{x_i^{(j)} - \min(x_i)}{ \max(x_i) - \min(x_i)}$$
 
 ## Profiling Players
 
