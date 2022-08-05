@@ -20,6 +20,8 @@ This report explains the details of this method and applies it to centre backs i
 
 ## Profiling Players
 
+![FB Profile](images/FB_profile.png)
+
 ## Resulting Ranking
 
 ![](images/CB_NLS_Ranking_leaflet_2021.png)
