@@ -7,7 +7,6 @@ How valuable a player is often attributed to their excellence in multiple areas 
 Moreover, teams play systems that require different position specific roles with contrasting attributes. For example, some teams may require one central midfielder who sits deep, breaks up play and does not venchure forward or overly contribute to build-up play. Other teams may want two compitently defensive midfielders who are equally good at bring the ball up the field and contributing to build-up play. These attributes are contained in much more than a few statistics and identifying statistically top players who fit this profile may be challenging. 
 
 Here is presented a method identifying players using statitsics based on a bespoke profile created by the user. This method takes an input of multiple statistics from a dataset of players and reduces them all to one number for each player using a weighted average. This is then ranked to highlight the most suitable players for this position. The construction is based on a collection of weights inputed by the user which measures the importance that catagory of the player's game is to the final ranking. 
-![image](https://user-images.githubusercontent.com/110287328/183114847-d4f20a2d-f250-4b64-94cf-c2004d20dec0.png)
 
 This report explains the details of this method and applies it to centre backs in the Premier League. 
 
