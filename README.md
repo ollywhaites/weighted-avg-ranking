@@ -16,7 +16,7 @@ This report explains the details of this method and applies it to centre backs i
 *Data used for visualisations in this document has been sourced from Wyscout.*
 
 
-## Weighted Averages
+## Normalise Scores
 
 Consider a dataset of size $N$. Each datapoint is scored in $n$ different catagories where the value of the score is denoted $x^{(j)}_i$ for the $i$ th score in the $j$ th datapoint. Although scoring each datapoint in separate catagories is good, it would be useful to combine all these scores into one score, making all the data points easier to compare. One of the simplest ways of doing this is just by taking the sum of all the scores, such that 
 
@@ -34,7 +34,23 @@ Alternatively, the scores can be ranked. This involves simply sorting the datapo
 
 $$\tilde{x}_i^{(j)} = g(x^{(j)}_i) = \frac{N - \text{rank}(x_i)}{N - 1}$$
 
+where $\text{rank}(x)$ ranks a dataset of points from largest to smallest.
+
 These mappings produce slightly different distributions of the dataset. The normalisation method is more representitive of the dataset, but may overvalue players who have outlying scores. On the other hand, the ranking method does not over reward players who perform dramatically better in some statitsics. In some cases, it may be useful to use the normalisation method as players with vastly greater statistics should be rewarded. In this report, the ranking method will be used.
+
+Additionally, penalising factors can be added by taking away 0.5 from all ranked datapoints. This means score above average (or 0.5) will be positive and any score below average will be negative. By doing this, players are penalised for scoring poorly in areas which are valuable to the user.
+
+By adapting the scores in this way all scoring catagories are put on the same level, regadless of their range. This helps combine statistics evenly into one score using the aforementioned averaging method. 
+
+## Weighted Average
+
+Although it is useful to normalise scores so that they are all treated evenly, in cases where some scores are more important than others it is practical to artifically prioritise certain scores. This is done by performing a weighted average. 
+
+To perform a weighted average, initially a set of weights must be constructed for each of the different catagories of scoring. This entails choosing a number between $0$ and $b$ for each catagory of the dataset where $b$ is the most important. In this report, $b = 10$ is chosen. The $n$ weights chosen are denoted as $w_i$ for the $i$ th catagory. 
+
+A score for each datapoint, taking into account the catagories which are prioritised, is constructed by a weighted average as 
+
+$$\tilde{X}_j = \sum_i^n w_i \tilde{x}_i^{(j)}$$
 
 ## Profiling Players
 
