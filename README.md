@@ -54,11 +54,24 @@ $$\tilde{X}_j = \sum_i^n w_i \tilde{x}_i^{(j)}$$
 
 ## Profiling Players
 
+This can be applied to football statistics, where the scores mentioned previously are the values for each statistic. Then, the weighted average weights are chosen in order to value particular statitsics over others. Valued statistics are chosen based on the profile of player needed. For example, if a more defensive player is needed, then defensive statistics must be valued higher than offensive statistics. An example of a profile of these weights for a fullback is shown bellow.
+
 ![FB Profile](images/FB_Profile.png)
 
+In this figure, the catagories used (such as defence) contain a collection of statistics such as defensive duels won ect. This can be changed to suit the user. For this particular profile, a strong defensive minded fullback who can set-up chances is needed. Hence, defenisve statistics are ranked highly in importance (weighted in 10's), then crossing ability and creative statistics are ranked as or next to most highly. This is then followed by dribbling or bringing the ball out from defence, which is not as desired for this profile but is taken into account. All other statistics involving goals and getting into the box are not needed for this profile of fullback.
+
 ## Resulting Ranking
+
+Finally, to demonstrate how it can be used to highlight valuable players, a profile for central defenders applied. This is a simple profile, which requires a defender who excells defensively, reasonably good with the ball and possibly chips in with the a few goals. After applying this profile (or weights), the single score found from the weighted average is sorted and the highest scoring players for this profile are shown below.
 
 ![](images/CB_NLS_Ranking_leaflet_2021.png)
 
 ## Final Remarks
 
+Here is a list of considerations when using this method:
+
+  - Be careful not to include too many catagories when applying a profile. If too many statistics are condsidered, the end score may become dependent on too many factors and introduce co-linearlity.
+  
+  - When looking at final scores, the top 20 are the most suited. Anything lower than this may not suit the profile at all and scores highly because they perform well in a particular statistic.
+  
+  - 0-10 scoring system is not presented to be the optimal choice, it is just the most common scoring system. A smaller or large range is also applicable.
