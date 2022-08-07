@@ -64,7 +64,7 @@ In this figure, the catagories used (such as defence) contain a collection of st
 
 Finally, to demonstrate how it can be used to highlight valuable players, a profile for central defenders applied. This is a simple profile, which requires a defender who excells defensively, reasonably good with the ball and possibly chips in with the a few goals. After applying this profile (or weights), the single score found from the weighted average is sorted and the highest scoring players for this profile are shown below.
 
-![](images/CB_NLS_Ranking_leaflet_2021.png)
+![](images/CB_EPL_Ranking_leaflet_2021.png)
 
 ## Final Remarks
 
