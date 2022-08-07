@@ -71,6 +71,8 @@ Finally, to demonstrate how it can be used to highlight valuable players, a prof
 Here is a list of considerations when using this method:
 
   - Be careful not to include too many catagories when applying a profile. If too many statistics are condsidered, the end score may become dependent on too many factors and introduce co-linearlity.
+
+  - Explicit positions in rankings do not necessarily represent better players. It is just a guide to evaluate which players are more suited to the profile used.
   
   - When looking at final scores, the top 20 are the most suited. Anything lower than this may not suit the profile at all and scores highly because they perform well in a particular statistic.
   
